@@ -103,7 +103,13 @@ body {
   display: flex; 
   justify-content: space-between;
 }
-
+.car {
+  background-color: var( --secondary);
+  border: 1px solid var( --secondary);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 3px; 
+}
 
 .car img {
   width: 200px; 
