@@ -36,7 +36,14 @@ body {
 
 }
 
-
+.navbar > a {
+  text-decoration: none;
+  color: var( --secondary); 
+  background-color: var(--primary);
+  padding: 5px; 
+  font-size: 8px;
+  border-radius: 5px;
+}
 .navbar > a:hover {
   text-decoration: none;
   color: var(--primary); 
