@@ -5,7 +5,7 @@ import Login from "./pages/Login";
 import Navbar from "./pages/Navbar";
 import Reviews from "./pages/Review";
 import Services from "./pages/Services";
-
+import Signup from "./pages/Signup";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(null)
@@ -21,6 +21,7 @@ function App() {
         <Navbar />
         <Routes>
           {/* <Route path ="/" element={<Landing />}  /> */}
+          <Route path ="signup" element = {<Signup/>} />
           <Route path ="login" element = {<Login isLoggedIn = {isLoggedIn} setIsLoggedIn = {setIsLoggedIn}/>} />
           <Route path="services" element ={<Services />}/>
           <Route path="reviews" element ={<Reviews />}/>
