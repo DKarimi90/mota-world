@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import { useState } from "react";
+import About from "./pages/About";
 import Footer from "./pages/Footer";
 import Login from "./pages/Login";
 import Navbar from "./pages/Navbar";
@@ -24,6 +25,7 @@ function App() {
           <Route path ="signup" element = {<Signup/>} />
           <Route path ="login" element = {<Login isLoggedIn = {isLoggedIn} setIsLoggedIn = {setIsLoggedIn}/>} />
           <Route path="services" element ={<Services />}/>
+          <Route path="about" element = {<About />}/>
           <Route path="reviews" element ={<Reviews />}/>
          
         </Routes>
