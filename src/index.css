@@ -142,7 +142,12 @@ body {
   padding: 20px 5px; 
 
  }
-
+ .footer h6 {
+  font-size: 8px;
+ }
+ .footer p {
+  font-size: 7px;
+ }
  .center a {
   text-decoration: none;
   color: var( --secondary); 
