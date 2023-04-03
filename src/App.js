@@ -6,6 +6,7 @@ import Footer from "./pages/Footer";
 import Landing from "./pages/Landing";
 import Login from "./pages/Login";
 import Navbar from "./pages/Navbar";
+import ProtectedRoutes from "./pages/ProtectedRoutes";
 import Reviews from "./pages/Review";
 import Services from "./pages/Services";
 import Signup from "./pages/Signup";
