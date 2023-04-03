@@ -1,13 +1,275 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@media screen and (max-width: 600px) {
+  .landing img {
+    width: 100%; 
+    height: auto; 
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Edu+NSW+ACT+Foundation:wght@500&family=Fasthand&family=MonteCarlo&family=Montserrat:ital,wght@0,200;0,300;0,700;1,200;1,400&family=Moon+Dance&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto+Mono&family=Roboto:ital,wght@0,100;1,300&family=Sassy+Frass&family=Shadows+Into+Light&display=swap');
+
+:root {
+  --primary: #05668d; 
+  --secondary: #fff; 
+  --other: rgb(0, 0, 0, 0.05); 
+  --links: #6f1d1b; 
 }
+
+body {
+  font-family: Montserrat;
+}
+.navbar {
+  display: flex; 
+  justify-content: flex-end;
+  align-items: center;
+  margin: auto; 
+  gap: 10px; 
+  box-shadow: var(--other);
+  padding: 5px; 
+  box-shadow: 0.5px 0.5px 0.5px;
+
+}
+.navbar > h2 {
+  margin-right: auto;
+  border-bottom: 1px solid;
+  color: var(--primary);
+  font-style: italic;
+
+}
+
+.navbar > a {
+  text-decoration: none;
+  color: var( --secondary); 
+  background-color: var(--primary);
+  padding: 5px; 
+  font-size: 8px;
+  border-radius: 5px;
+}
+.navbar > a:hover {
+  text-decoration: none;
+  color: var(--primary); 
+  background-color: var( --secondary);
+
+}
+.card {
+  display: flex; 
+  flex-wrap: wrap; 
+ 
+}
+.car h4 {
+  text-align: center;
+  font-size: 8px;
+}
+
+.handle-button {
+  background-color: transparent; 
+  border: none; 
+  outline: none; 
+  padding: 3px; 
+  margin: 2px; 
+  color: #000; 
+  background-color: var(--other);
+  border-radius: 4px;
+  padding: 5px; 
+  font-size: 6px; 
+}
+.handle-button:hover {
+  cursor: pointer; 
+  color: var(--primary); 
+  background-color: var( --secondary);
+}
+
+.landing p {
+  font-size: 15px; 
+  font-style: italic;
+
+}
+.landing {
+  display: flex; 
+  justify-content: flex-end;
+  margin: auto; 
+}
+
+.landing img {
+  width: 450px; 
+  height: 250px; 
+}
+.landing h3 {
+  margin-right: auto; 
+}
+.motor {
+  background-color: var(--other);
+  padding: 7px;
+  border-radius: 4px; 
+  display: flex; 
+  flex-direction: column;
+  margin-top: 5px;
+  margin-top: 5%;
+
+}
+.motor h4 {
+  font-style: italic;
+}
+.btn {
+  margin-top: 20%;
+  margin-left: 30%;
+} 
+.btn {
+  background-color: var(--primary);
+  border: none; 
+  outline: none; 
+  padding: 5px; 
+  color: var( --secondary); 
+  border-radius: 5px;
+}
+.btn:hover {
+  cursor:pointer; 
+  color: var(--primary);
+  background-color: var( --secondary);
+}
+.buttons {
+  display: flex; 
+  justify-content: space-between;
+}
+.car {
+  background-color: var( --secondary);
+  border: 1px solid var( --secondary);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 3px; 
+}
+
+.car img {
+  width: 200px; 
+  height: 140px; 
+  margin: px; 
+}
+
+.car-details img {
+  background-color: var( --secondary);
+  border: 1px solid var( --secondary);
+  border-radius: 5px;
+  overflow: hidden; 
+  width: 400px; 
+}
+.car p {
+  text-align: center;
+  font-size: 10px; 
+}
+.car-details p {
+ text-align: center;
+ font-size: 10px;
+}
+.car-details h4 {
+  text-align: center;
+ }
+ .car-details img {
+  margin-left: 20px; 
+ }
+ .footer {
+  display: flex; 
+  justify-content: space-evenly;
+  height: 20%; 
+  color: var( --secondary); 
+  background-color: var(--primary); 
+  margin-top: 20%;
+  padding: 20px 5px; 
+
+ }
+ .footer h6 {
+  font-size: 8px;
+ }
+ .footer p {
+  font-size: 7px;
+ }
+ .center a {
+  text-decoration: none;
+  color: var( --secondary); 
+ }
+ .contact a {
+  text-decoration: none;
+  color: #000; 
+  font-size: 10px; 
+ }
+ .contact p {
+  text-align: center;
+ }
+ .contact a:hover {
+  text-decoration: none;
+  color: var( --secondary); 
+  cursor: pointer; 
+  background-color: var(--primary);
+  padding: 4px; 
+  border-radius: 2px;
+ }
+ .search input {
+  margin: 5%;
+  margin-left: 30%;
+  text-align: center;
+  border: 1px solid; 
+  outline: none; 
+  border-radius: 2px; 
+ }
+ .form {
+  background-color: var(--other);
+  padding: 5px;
+  margin: 5px; 
+  border-radius: 4px;
+ }
+ .form input {
+  margin: 2px; 
+  text-align: center;
+  border: none; 
+  outline: none; 
+ }
+ .more-details {
+  background-color: var(--other);
+  padding: 5px;
+  border-radius: 3px;
+
+
+ }
+ .brief-details {
+  background-color: var(--other);
+  padding: 5px;
+  margin: 2px; 
+
+ }
+ .services {
+  display: flex; 
+  flex-wrap: wrap;
+ }
+ h5 {
+  text-align: center;
+ }
+ .more-info {
+  width: 100%; 
+  text-align: left;
+  margin: 3px; 
+  padding: 5px; 
+  background-color: var(--other);
+ }
+ .link {
+  text-decoration: none;
+  color: var(--links); 
+  font-size: 12px;
+  font-weight: bold;
+ }
+ .customer {
+  text-decoration: none;
+  color: var(--links); 
+  font-size: 12px;
+  font-weight: bold;
+ }
+ .customer p {
+  font-family: italic;
+ }
+ 
+ 
+
+
+
+
+
+
+
+
