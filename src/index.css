@@ -60,7 +60,18 @@ body {
   font-size: 8px;
 }
 
-/*handle*/
+.handle-button {
+  background-color: transparent; 
+  border: none; 
+  outline: none; 
+  padding: 3px; 
+  margin: 2px; 
+  color: #000; 
+  background-color: var(--other);
+  border-radius: 4px;
+  padding: 5px; 
+  font-size: 6px; 
+}
 .handle-button:hover {
   cursor: pointer; 
   color: var(--primary); 
@@ -85,7 +96,16 @@ body {
 .landing h3 {
   margin-right: auto; 
 }
-/* motor*/
+.motor {
+  background-color: var(--other);
+  padding: 7px;
+  border-radius: 4px; 
+  display: flex; 
+  flex-direction: column;
+  margin-top: 5px;
+  margin-top: 5%;
+
+}
 .motor h4 {
   font-style: italic;
 }
