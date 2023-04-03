@@ -177,7 +177,12 @@ body {
   margin: 5px; 
   border-radius: 4px;
  }
-
+ .form input {
+  margin: 2px; 
+  text-align: center;
+  border: none; 
+  outline: none; 
+ }
  .more-details {
   background-color: var(--other);
   padding: 5px;
