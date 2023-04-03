@@ -24,7 +24,6 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          {/* <Route path ="/" element={<Landing />}  /> */}
           <Route path ="signup" element = {<Signup/>} />
           <Route path ="login" element = {<Login isLoggedIn = {isLoggedIn} setIsLoggedIn = {setIsLoggedIn}/>} />
           <Route path ="contact" element = {<Contact/>} />
