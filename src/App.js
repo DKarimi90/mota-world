@@ -3,6 +3,7 @@ import { useState } from "react";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
+import Landing from "./pages/Landing";
 import Login from "./pages/Login";
 import Navbar from "./pages/Navbar";
 import Reviews from "./pages/Review";
@@ -29,7 +30,14 @@ function App() {
           <Route path="services" element ={<Services />}/>
           <Route path="about" element = {<About />}/>
           <Route path="reviews" element ={<Reviews />}/>
-         
+          <Route
+          path="/"
+          element={
+          <ProtectedRoutes isLoggedIn={isLoggedIn}>
+          <Landing />
+          </ProtectedRoutes>
+          }
+            />
         </Routes>
         <Footer />
       </Router>
