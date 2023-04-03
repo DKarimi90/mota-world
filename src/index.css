@@ -93,7 +93,14 @@ body {
   margin-top: 20%;
   margin-left: 30%;
 } 
-
+.btn {
+  background-color: var(--primary);
+  border: none; 
+  outline: none; 
+  padding: 5px; 
+  color: var( --secondary); 
+  border-radius: 5px;
+}
 .btn:hover {
   cursor:pointer; 
   color: var(--primary);
